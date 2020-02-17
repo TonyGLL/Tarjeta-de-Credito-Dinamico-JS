@@ -1,0 +1,31 @@
+.contenedor
+    width: 90%
+    max-width: 1000px
+    padding: 40px 20px
+    margin: auto
+    display: flex
+    flex-direction: column
+    //background: #ccc
+    align-items: center
+.tarjeta
+    width: 100%
+    max-width: 550px
+    position: relative
+    color: #fff
+    transition: .3s all ease
+    transform: rotateY(0deg)
+    transform-style: preserve-3d
+    backface-visibility: hidden
+    cursor: pointer
+    z-index: 2
+    //background: #000
+    &.active
+        transform: rotateY(180deg)
+    >div
+        padding: 30px
+        border-radius: 15px
+        min-height: 315px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        box-shadow: 0px 10px 10px 0px rgba(90, 116, 148, 0.3)
